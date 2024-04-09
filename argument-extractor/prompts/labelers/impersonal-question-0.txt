@@ -1,0 +1,18 @@
+Please apply the following task to batches of inputs and return a JSON object of responses, with batch numbers as keys:
+
+Determine whether each of the questions in {lang} language below is impersonal (Impersonal) or not (NotImpersonal).
+If you are not sure, please answer impersonal (Impersonal).
+
+The input questions are provided within the three hashtags delimiter (###).
+
+Your response must be a Python dictionary in the exact following format:
+{
+"question": "the original given question without any modification",
+"label": <Impersonal,NotImpersonal>,
+"reason": the reason for your answer
+}
+Please return only the response without any markdown.
+
+###
+{batch}
+###

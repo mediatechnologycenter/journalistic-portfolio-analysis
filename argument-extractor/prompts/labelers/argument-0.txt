@@ -1,0 +1,18 @@
+Please apply the following task to batches of inputs and return a JSON object of responses, with batch numbers as keys:
+
+Determine whether each of the statements in {lang} language below either supports the given question (Argument_for), opposes the (Argument_against), or does not answer the question (NoArgument). Please think about the answer in the broad sense: if the statement answers "yes" to the question, assign the label Argument_for. If the statement answers "no" to the question, assign the label Argument_against.
+
+The input statement and the question are provided within the three hashtags delimiter (###).
+
+Your response must be a Python dictionary in the exact following format:
+{
+"statement": "an original given statement without any modification",
+"question": "the original given question without any modification",
+"label": <Argument_for,Argument_against,NoArgument>,
+"reason": the reason for your answer
+}
+Please return only the response without any markdown.
+
+###
+{batch}
+###

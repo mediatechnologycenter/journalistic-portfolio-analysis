@@ -1,0 +1,4 @@
+Contributions:
+
+* Piriyakorn Piriyatamwong <piriyakorn.piriyatamwong@inf.ethz.ch>: Implementation and documentation.
+* Saikishore Kalloori <saikishore.kalloori@inf.ethz.ch>: Supervision.

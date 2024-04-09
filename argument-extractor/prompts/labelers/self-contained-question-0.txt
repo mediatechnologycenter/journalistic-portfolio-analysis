@@ -1,0 +1,18 @@
+Please apply the following task to batches of inputs and return a JSON object of responses, with batch numbers as keys:
+
+Is the following question in {lang} language self-contained, i.e., suitable for unproctored examinations (SelfContained) or not (NotSelfContained).
+The question is definitely not self-contained (NotSelfContained) if it refers to external entities by using demonstrative pronouns like "This", "This issue" or by using indefinite article like "The troublemakers" that cannot be resolved without clarifications with the person who creates the question.
+If you are not sure, please answer not (NotSelfContained).
+
+The input questions are provided within the three hashtags delimiter (###).
+
+Your response must be a Python dictionary in the exact following format:
+{
+"question": "the original given question without any modification",
+"label": <SelfContained,NotSelfContained>,
+"reason": the reason for your answer
+}
+
+###
+{batch}
+###

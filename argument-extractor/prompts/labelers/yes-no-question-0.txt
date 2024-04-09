@@ -1,0 +1,16 @@
+Please apply the following task to batches of inputs and return a JSON object of responses, with batch numbers as keys:
+
+Determine whether each of the questions in {lang} language below is a yes-no question (YesNo) or not (NotYesNo).
+
+The input questions are provided within the three hashtags delimiter (###).
+
+Your response must be a Python dictionary in the exact following format:
+{
+"question": "the original given question without any modification",
+"label": <YesNo,NotYesNo>
+}
+Please return only the response without any markdown.
+
+###
+{batch}
+###
